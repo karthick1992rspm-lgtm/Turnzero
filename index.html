@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Turn Zero Club | Bangalore Board Game Community</title>
+  <meta name="description" content="Turn Zero Club is Bangalore's board game community, hosting regular board game meetups in Whitefield, Brookefield and across Bangalore.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav">
+
+</a>
+</a>
+    <a class="brand" href="#home">
+  <div class="logo-box">
+    <img src="logo.jpg" alt="Turn Zero Club">
+  </div>
+  <span>TURN ZERO CLUB</span>
+  <nav>
+    <a href="#events">Events</a>
+    <a href="#games">Games</a>
+    <a href="#about">About</a>
+    <a class="nav-cta" href="#join">Join us</a>
+  </nav>
+  <button class="menu" aria-label="Open menu">☰</button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">BANGALORE • BOARD GAMES • COMMUNITY</p>
+    <h1>Put the phone down.<br><em>Take your seat.</em></h1>
+    <p class="lead">A community for people who'd rather spend the weekend plotting, trading, bluffing and rolling dice around a table.</p>
+    <div class="actions">
+      <a class="button primary" href="#events">Find a meetup</a>
+      <a class="button secondary" href="#games">Explore games</a>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="table-top">
+      <div class="meeple">♟</div>
+      <div class="die">20</div>
+      <div class="token token-a"></div><div class="token token-b"></div>
+      <div class="card-stack"><span></span><span></span><span></span></div>
+      <div class="mini-card">YOUR<br><strong>TURN</strong></div>
+    </div>
+    <div class="hero-card-caption"><span>TURN ZERO</span><span>EST. BANGALORE</span></div>
+  </div>
+</section>
+
+<section id="events" class="section">
+  <div class="section-head">
+    <div><p class="eyebrow">NEXT UP</p><h2>Meet at the table.</h2></div>
+    <a href="#join" class="text-link">See all events →</a>
+  </div>
+  <div class="event-grid">
+    <article class="event featured">
+      <article class="event featured">
+  <div class="event-date">
+    <strong>10</strong>
+    <span>OCT</span>
+  </div>
+
+  <div>
+    <span class="pill">NEXT MEETUP</span>
+    <h3>Turn Zero Club Meetup</h3>
+    <p>
+      Six hours of board games, new people and good chaos.
+      Come with friends or come solo. We'll find you a table.
+    </p>
+
+    <div class="meta">
+      📍 Wild Rabbit Cafe, Brookefield
+      &nbsp; • &nbsp;
+      ⏱ 3:00 PM – 9:00 PM
+    </div>
+  </div>
+
+  <a
+    class="button small primary"
+    href="https://aavo.app/event/39301"
+    target="_blank"
+    rel="noopener"
+  >
+    Register →
+  </a>
+</article>
+      <a class="button small secondary" href="#join">Details</a>
+    </article>
+  </div>
+</section>
+
+<section id="games" class="section games-section">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">THE TURN ZERO LIBRARY</p>
+      <h2>What's on the shelf?</h2>
+    </div>
+    <p class="section-note"><span id="gameCount">136</span> games in the collection. Search, filter and find your next table.</p>
+  </div>
+
+  <div class="library-toolbar">
+    <input id="gameSearch" type="search" placeholder="Search games..." aria-label="Search games">
+    <select id="gameFilter" aria-label="Filter games">
+      <option value="all">All games</option>
+      <option value="1-2">Best for 1–2</option>
+      <option value="3-4">Best for 3–4</option>
+      <option value="5+">Best for 5+</option>
+      <option value="quick">45 min or less</option>
+      <option value="heavy">Heavy games (3.5+)</option>
+    </select>
+    <select id="gameSort" aria-label="Sort games">
+      <option value="name">Name A–Z</option>
+      <option value="rating">Highest rating</option>
+      <option value="rank">Best BGG rank</option>
+      <option value="weight">Lightest first</option>
+    </select>
+    <button class="library-random" id="randomGame">SURPRISE ME ↗</button>
+  </div>
+
+  <div id="gameGrid" class="csv-game-grid" aria-live="polite">
+    <div class="library-loading">Loading the shelf…</div>
+  </div>
+
+  <div id="gameEmpty" class="library-empty" hidden>
+    No games match that search. Try another table.
+  </div>
+
+  <div id="gameModal" class="game-modal" hidden>
+    <div class="game-modal-backdrop" data-close-game></div>
+    <article class="game-modal-card" role="dialog" aria-modal="true" aria-labelledby="modalGameName">
+      <button class="game-modal-close" data-close-game aria-label="Close">×</button>
+      <p class="eyebrow">GAME DETAILS</p>
+      <h3 id="modalGameName"></h3>
+      <div id="modalGameMeta" class="modal-game-meta"></div>
+      <div id="modalGameStats" class="modal-game-stats"></div>
+    </article>
+  </div>
+</section>
+
+<section id="about" class="split">
+  <div>
+    <p class="eyebrow">WHY WE EXIST</p>
+    <h2>Less scrolling.<br>More playing.</h2>
+  </div>
+  <div class="about-copy">
+    <p>Turn Zero Club is a Bangalore community built around one simple idea: good games are better when there's a table full of people to play them with.</p>
+    <p>Whether you're a cardboard veteran or someone who thinks Catan is a type of vegetable, there's a seat for you.</p>
+    <div class="stats"><div><strong>100+</strong><span>players in our community</span></div><div><strong>20+</strong><span>meetups hosted</span></div><div><strong>∞</strong><span>games to discover</span></div></div>
+  </div>
+</section>
+
+<section id="join" class="join">
+  <p class="eyebrow">YOUR MOVE</p>
+  <h2>Come play with us.</h2>
+  <p>Meet new people, discover great games and reclaim a few hours from the algorithm.</p>
+  <div class="actions">
+    <a class="button primary" href="https://instagram.com/turn_zero_club" target="_blank" rel="noopener">Instagram ↗</a>
+    <a class="button secondary" href="https://chat.whatsapp.com/LKNLQZz9cGMC7wLoANziaY"; return false;">Join WhatsApp</a>
+  </div>
+</section>
+</main>
+
+<footer><span>© 2026 Turn Zero Club</span><span>Bangalore, India</span><span>Made for people who play.</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
