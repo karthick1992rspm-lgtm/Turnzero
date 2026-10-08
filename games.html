@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game Library | Turn Zero Club</title>
+  <meta name="description" content="Explore the Turn Zero Club board game library in Bengaluru.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="games-page">
+<header class="nav">
+  <a class="brand" href="index.html"><div class="logo-box"><img src="logo.jpg" alt="Turn Zero Club"></div><span>TURN ZERO CLUB</span></a>
+  <nav><a href="index.html#events">Events</a><a class="active-link" href="games.html">Game Library</a><a href="index.html#about">About</a><a class="nav-cta" href="index.html#join">Join us</a></nav>
+  <button class="menu" aria-label="Open menu">☰</button>
+</header>
+
+<main>
+<section class="library-hero">
+  <p class="eyebrow">TURN ZERO CLUB • GAME LIBRARY</p>
+  <h1>Find your<br><em>next game.</em></h1>
+  <p class="lead">The club shelf, searchable. Find something for two, a party, a long Saturday, or a table that enjoys making questionable strategic decisions.</p>
+</section>
+
+<section class="library-tools">
+  <div class="library-topline">
+    <div><strong id="gameCount">Loading games…</strong><span> in the library</span></div>
+    <button id="surpriseBtn" class="button primary">🎲 Surprise Me</button>
+  </div>
+  <div class="search-row">
+    <input id="search" type="search" placeholder="Search by game name…" autocomplete="off">
+    <select id="players"><option value="">Any players</option><option value="2">2 players</option><option value="3">3 players</option><option value="4">4 players</option><option value="5">5+ players</option></select>
+    <select id="time"><option value="">Any play time</option><option value="30">Up to 30 min</option><option value="60">Up to 60 min</option><option value="120">Up to 120 min</option><option value="180">Up to 180 min</option></select>
+    <select id="complexity"><option value="">Any complexity</option><option value="2">Light · under 2</option><option value="3">Medium · 2–3</option><option value="4">Heavy · 3+</option></select>
+    <select id="sort"><option value="name">A–Z</option><option value="rating">Highest rating</option><option value="rank">Best BGG rank</option><option value="weight">Lightest first</option><option value="weight-desc">Heaviest first</option></select>
+  </div>
+</section>
+
+<section class="catalogue">
+  <div id="empty" class="empty" hidden>No games match those filters. Try loosening the net.</div>
+  <div id="gameGrid" class="library-grid"></div>
+</section>
+</main>
+
+<div id="modal" class="modal" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <article class="game-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <p class="eyebrow">GAME DETAILS</p>
+    <h2 id="modalTitle"></h2>
+    <div id="modalMeta" class="modal-meta"></div>
+    <div id="modalStats" class="modal-stats"></div>
+  </article>
+</div>
+<script src="games.js"></script>
+</body>
+</html>
