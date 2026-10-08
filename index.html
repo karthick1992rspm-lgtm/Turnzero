@@ -19,7 +19,7 @@
 
   <nav>
     <a href="#events">Events</a>
-    <a href="#games">Games</a>
+   <a href="games.html">Games</a>
     <a href="#about">About</a>
     <a class="nav-cta" href="#join">Join us</a>
   </nav>
@@ -36,7 +36,7 @@
     <p class="lead">A community for people who'd rather spend the weekend plotting, trading, bluffing and rolling dice around a table.</p>
     <div class="actions">
       <a class="button primary" href="#events">Find a meetup</a>
-      <a class="button secondary" href="#games">Explore games</a>
+      <a class="button secondary" href="games.html">Explore game library →</a>
     </div>
   </div>
   <div class="hero-card">
@@ -110,53 +110,7 @@
   </div>
 </section>
 
-<section id="games" class="section games-section">
-  <div class="section-head">
-    <div>
-      <p class="eyebrow">THE TURN ZERO LIBRARY</p>
-      <h2>What's on the shelf?</h2>
-    </div>
-    <p class="section-note"><span id="gameCount">136</span> games in the collection. Search, filter and find your next table.</p>
-  </div>
 
-  <div class="library-toolbar">
-    <input id="gameSearch" type="search" placeholder="Search games..." aria-label="Search games">
-    <select id="gameFilter" aria-label="Filter games">
-      <option value="all">All games</option>
-      <option value="1-2">Best for 1–2</option>
-      <option value="3-4">Best for 3–4</option>
-      <option value="5+">Best for 5+</option>
-      <option value="quick">45 min or less</option>
-      <option value="heavy">Heavy games (3.5+)</option>
-    </select>
-    <select id="gameSort" aria-label="Sort games">
-      <option value="name">Name A–Z</option>
-      <option value="rating">Highest rating</option>
-      <option value="rank">Best BGG rank</option>
-      <option value="weight">Lightest first</option>
-    </select>
-    <button class="library-random" id="randomGame">SURPRISE ME ↗</button>
-  </div>
-
-  <div id="gameGrid" class="csv-game-grid" aria-live="polite">
-    <div class="library-loading">Loading the shelf…</div>
-  </div>
-
-  <div id="gameEmpty" class="library-empty" hidden>
-    No games match that search. Try another table.
-  </div>
-
-  <div id="gameModal" class="game-modal" hidden>
-    <div class="game-modal-backdrop" data-close-game></div>
-    <article class="game-modal-card" role="dialog" aria-modal="true" aria-labelledby="modalGameName">
-      <button class="game-modal-close" data-close-game aria-label="Close">×</button>
-      <p class="eyebrow">GAME DETAILS</p>
-      <h3 id="modalGameName"></h3>
-      <div id="modalGameMeta" class="modal-game-meta"></div>
-      <div id="modalGameStats" class="modal-game-stats"></div>
-    </article>
-  </div>
-</section>
 
 <section id="about" class="split">
   <div>
